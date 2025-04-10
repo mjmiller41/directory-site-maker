@@ -5,9 +5,8 @@
   "scripts": {
     "jekyll-serve": "bundle exec jekyll serve -lI",
     "jekyll-build": "bundle exec jekyll build -I",
-    "update-jekyll-data": "NODE_ENV=development node _backend/updateJekyllData.js",
-    "build-states": "node _backend/createUriPaths.js",
-    "build-states-dev": "NODE_ENV=development node _backend/createUriPaths.js",
+    "update-data": "NODE_ENV=development node _backend/updatePlacesData.js",
+    "build-places": "node _backend/buildPlaces.js",
     "start": "node _backend/findNewPlaces.js",
     "find-new": "NODE_ENV=development node _backend/findNewPlaces.js",
     "limit": "npm run dev -- --limit",
