@@ -28,6 +28,7 @@ place_type: Directory Site # used in liquid as singular or plural i.e. steakhous
 description: >- # this means to ignore newlines until "baseurl:"
   Replace with site discription
 baseurl: '' # the subpath of your site, e.g. /blog
+domain: www.example.com
 url: 'https://www.steakhouse-near-me.us' # the site's hostname & protocol, e.g. http://example.com
 
 plugins:

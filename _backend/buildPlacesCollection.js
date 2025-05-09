@@ -62,10 +62,7 @@ async function writePlace(stateName, stateAbbr, city, place) {
 }
 
 async function run() {
-  const { rows } = await db.getAllPlaces('0', {
-    column: 'generative_summary',
-    query: 'IS NOT NULL'
-  })
+  const { rows } = await db.getAllPlaces()
   console.log(`${rows.length} rows read from database.`)
 
   await cleanDir(path.join(__dirname, '../_states/**'))

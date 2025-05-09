@@ -383,8 +383,8 @@ export default class DB {
     )
   }
 
-  async getAllPlaces(interval, { column, query }, orderBy = 'ASC') {
-    let queryTxt = `SELECT * FROM public.${process.env.PLACES_TABLE_NAME}\n`
+  async getAllPlaces(interval, column, query, orderBy = 'ASC') {
+    let queryTxt = `SELECT * FROM public.${process.env.TABLE_NAME}\n`
     queryTxt += `WHERE updated_at <= NOW() - INTERVAL '${interval ? interval : '0'}'\n`
     queryTxt += column ? `AND ${column} ${query}\n` : ''
     queryTxt += devMode ? `AND state = 'FL' OR state = 'DC'\n` : ''
