@@ -25,6 +25,7 @@ logo: /assets/images/logo.svg
 logo_icon: icons/logo.svg
 place_focus: directory
 place_type: Directory Site # used in liquid as singular or plural i.e. steakhouse(s)
+google_place_type: restaurant
 description: >- # this means to ignore newlines until "baseurl:"
   Replace with site discription
 baseurl: '' # the subpath of your site, e.g. /blog

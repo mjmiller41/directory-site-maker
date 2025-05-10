@@ -4,15 +4,6 @@ import convert from 'xml-js'
 import { readYamlFile, readTextFromFile } from './lib/fileIO.js'
 import 'dotenv/config'
 
-// const endpoints = [
-// 'www.bing.com'
-// 'api.indexnow.org'
-// 'searchadvisor.naver.com',
-// 'search.seznam.cz',
-// 'yandex.com',
-// 'indexnow.yep.com'
-// ]
-
 async function extractUrls(filename) {
   const xmlString = await readTextFromFile(filename)
   const jsonString = convert.xml2json(xmlString, { compact: true, spaces: 2 })
