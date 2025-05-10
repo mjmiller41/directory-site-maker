@@ -62,7 +62,7 @@ async function writePlace(stateName, stateAbbr, city, place) {
 }
 
 async function run() {
-  const { rows } = await db.getAllPlaces(
+  const { rows } = await db.getPlacesToBuild(
     ((column = 'update_category'), (query = "!= 'atmosphere'"), (orderBy = 'DESC'))
   )
   console.log(`${rows.length} rows read from database.`)
